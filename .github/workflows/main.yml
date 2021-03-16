@@ -74,7 +74,7 @@ jobs:
  
 
     # 运行 unicom 签到任务账号1
-    - name: Run unicom daily task
+    - name: Run unicom daily task 1
    
       env:
         user: ${{secrets.unicom_user}}
@@ -83,7 +83,7 @@ jobs:
       run: node index.js unicom --user=${user} --password=${password} --appid=${appid}
       
     # 运行 unicom 签到任务账号2
-    - name: Run unicom daily task
+    - name: Run unicom daily task 2
    
       env:
         user: ${{secrets.unicom_user2}}
